@@ -154,7 +154,7 @@ public class EditManager : MonoBehaviour
 
     public void UpdateUnitPanel()
     {
-        var list = stageData.waveDatas[curShowWave].unitDatas;
+        var list = stageData.waveDatas.Count > 0 ? stageData.waveDatas[curShowWave].unitDatas : new List<UnitData>();
         for (int i = 0; i < unitButtonlist.Count; i++)
         {
             if (i < list.Count)
@@ -178,6 +178,7 @@ public class EditManager : MonoBehaviour
         stageData.stageIndex = stageIdx;
         stageData.stageLevel = stageLevel;
 
+        chapterData.chapterIndex = chapter;
         chapterData.stageDatas[stageIdx] = stageData;
         string chapterJson = JsonUtility.ToJson(chapterData);
         string jsonData = JsonUtility.ToJson(stageData);
