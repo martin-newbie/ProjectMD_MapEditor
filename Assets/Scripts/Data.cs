@@ -14,37 +14,37 @@ public class UnitData
 [Serializable]
 public class WaveData
 {
-    public List<UnitData> unitsData;
+    public List<UnitData> unitDatas;
 
     public WaveData()
     {
-        unitsData = new List<UnitData>();
+        unitDatas = new List<UnitData>();
     }
 }
 
 [Serializable]
 public class StageData
 {
-    public int chapter_index;
-    public int stage_index;
-    public int stage_level;
+    public int chapterIndex;
+    public int stageIndex;
+    public int stageLevel;
 
-    public List<WaveData> wavesData;
+    public List<WaveData> waveDatas;
 
     public StageData()
     {
-        wavesData = new List<WaveData>();
+        waveDatas = new List<WaveData>();
     }
 }
 
 [Serializable]
 public class ChapterData
 {
-    public int chapter_index;
-    public List<StageData> stagesData;
+    public int chapterIndex;
+    public List<StageData> stageDatas;
 
     public ChapterData()
     {
-        stagesData = new List<StageData>(new StageData[20]);
+        stageDatas = new List<StageData>(new StageData[20]);
     }
 }

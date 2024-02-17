@@ -30,8 +30,8 @@ public class EditManager : MonoBehaviour
         stageData = new StageData();
         var firstWave = new WaveData();
         var firstUnit = new UnitData();
-        firstWave.unitsData.Add(firstUnit);
-        stageData.wavesData.Add(firstWave);
+        firstWave.unitDatas.Add(firstUnit);
+        stageData.waveDatas.Add(firstWave);
 
         int waveAllocCount = 10; // maximum wave count
         buttonList = new List<Button>();
@@ -74,12 +74,12 @@ public class EditManager : MonoBehaviour
         {
             var textAsset = Resources.Load<TextAsset>(resourcePath);
             chapterData = JsonUtility.FromJson<ChapterData>(textAsset.text);
-            stageData = chapterData.stagesData[stageIdx];
+            stageData = chapterData.stageDatas[stageIdx];
         }
         else
         {
             chapterData = new ChapterData();
-            chapterData.stagesData[stageIdx] = stageData;
+            chapterData.stageDatas[stageIdx] = stageData;
             File.WriteAllText(dataPath, JsonUtility.ToJson(chapterData));
         }
 
@@ -96,17 +96,17 @@ public class EditManager : MonoBehaviour
 
     public void AddNewWave()
     {
-        if (stageData.wavesData.Count == 10) return;
+        if (stageData.waveDatas.Count == 10) return;
 
         var waveData = new WaveData();
-        waveData.unitsData.Add(new UnitData());
-        stageData.wavesData.Add(waveData);
+        waveData.unitDatas.Add(new UnitData());
+        stageData.waveDatas.Add(waveData);
         UpdateWaveList();
     }
 
     public void DestroyCurWave()
     {
-        stageData.wavesData.RemoveAt(curShowWave);
+        stageData.waveDatas.RemoveAt(curShowWave);
         curShowWave = 0;
         UpdateWaveList();
         UpdateUnitPanel();
@@ -116,7 +116,7 @@ public class EditManager : MonoBehaviour
     {
         for (int i = 0; i < buttonList.Count; i++)
         {
-            if (i < stageData.wavesData.Count)
+            if (i < stageData.waveDatas.Count)
             {
                 buttonList[i].gameObject.SetActive(true);
             }
@@ -129,32 +129,32 @@ public class EditManager : MonoBehaviour
 
     public void AddNewUnit()
     {
-        if (stageData.wavesData[curShowWave].unitsData.Count == 8) return;
+        if (stageData.waveDatas[curShowWave].unitDatas.Count == 8) return;
 
         UnitData unit = new UnitData();
-        stageData.wavesData[curShowWave].unitsData.Add(unit);
+        stageData.waveDatas[curShowWave].unitDatas.Add(unit);
         UpdateUnitPanel();
     }
 
     public void RemoveUnitAt(int idx)
     {
-        stageData.wavesData[curShowWave].unitsData.RemoveAt(idx);
+        stageData.waveDatas[curShowWave].unitDatas.RemoveAt(idx);
         UpdateUnitPanel();
     }
 
     public void UpdateUnitIndex(int buttonIdx, int unitIdx)
     {
-        stageData.wavesData[curShowWave].unitsData[buttonIdx].index = unitIdx;
+        stageData.waveDatas[curShowWave].unitDatas[buttonIdx].index = unitIdx;
     }
 
     public void UpdateUnitType(int buttonIdx, int typeIdx)
     {
-        stageData.wavesData[curShowWave].unitsData[buttonIdx].unit_type = typeIdx;
+        stageData.waveDatas[curShowWave].unitDatas[buttonIdx].unit_type = typeIdx;
     }
 
     public void UpdateUnitPanel()
     {
-        var list = stageData.wavesData[curShowWave].unitsData;
+        var list = stageData.waveDatas[curShowWave].unitDatas;
         for (int i = 0; i < unitButtonlist.Count; i++)
         {
             if (i < list.Count)
@@ -174,11 +174,11 @@ public class EditManager : MonoBehaviour
         int stageIdx = int.Parse(stageInput.text);
         int stageLevel = int.Parse(stageLevelInput.text);
 
-        stageData.chapter_index = chapter;
-        stageData.stage_index = stageIdx;
-        stageData.stage_level = stageLevel;
+        stageData.chapterIndex = chapter;
+        stageData.stageIndex = stageIdx;
+        stageData.stageLevel = stageLevel;
 
-        chapterData.stagesData[stageIdx] = stageData;
+        chapterData.stageDatas[stageIdx] = stageData;
         string chapterJson = JsonUtility.ToJson(chapterData);
         string jsonData = JsonUtility.ToJson(stageData);
 
