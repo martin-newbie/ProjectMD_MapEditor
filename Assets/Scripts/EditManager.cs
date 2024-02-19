@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class EditManager : MonoBehaviour
 {
-    ChapterData chapterData;
     StageData stageData;
     int curShowWave;
 
@@ -68,20 +67,8 @@ public class EditManager : MonoBehaviour
         int chapter = int.Parse(chapterInput.text);
         int stageIdx = int.Parse(stageInput.text);
 
-        string resourcePath = "Chapter/" + chapter.ToString();
-        string dataPath = Application.dataPath + "/Resources/"  + resourcePath + ".txt";
-        if (File.Exists(dataPath))
-        {
-            var textAsset = Resources.Load<TextAsset>(resourcePath);
-            chapterData = JsonUtility.FromJson<ChapterData>(textAsset.text);
-            stageData = chapterData.stageDatas[stageIdx];
-        }
-        else
-        {
-            chapterData = new ChapterData();
-            chapterData.stageDatas[stageIdx] = stageData;
-            File.WriteAllText(dataPath, JsonUtility.ToJson(chapterData));
-        }
+        var chapterData = GetChapterData(chapter);
+        stageData = chapterData.stageDatas[stageIdx];
 
         curShowWave = 0;
         UpdateUnitPanel();
@@ -170,9 +157,12 @@ public class EditManager : MonoBehaviour
 
     public void ExportJSON()
     {
+
         int chapter = int.Parse(chapterInput.text);
         int stageIdx = int.Parse(stageInput.text);
         int stageLevel = int.Parse(stageLevelInput.text);
+
+        var chapterData = GetChapterData(chapter);
 
         stageData.chapterIndex = chapter;
         stageData.stageIndex = stageIdx;
@@ -187,5 +177,24 @@ public class EditManager : MonoBehaviour
         string dataPath = Application.dataPath + "/Resources/" + resourcePath + ".txt";
         File.WriteAllText(dataPath, chapterJson);
         GUIUtility.systemCopyBuffer = jsonData;
+    }
+
+    ChapterData GetChapterData(int idx)
+    {
+        string resourcePath = "Chapter/" + idx.ToString();
+        string dataPath = Application.dataPath + "/Resources/" + resourcePath + ".txt";
+        ChapterData chapter = null;
+        if (File.Exists(dataPath))
+        {
+            var textAsset = Resources.Load<TextAsset>(resourcePath);
+            chapter = JsonUtility.FromJson<ChapterData>(textAsset.text);
+        }
+        else
+        {
+            chapter = new ChapterData();
+            File.WriteAllText(dataPath, JsonUtility.ToJson(chapter));
+        }
+
+        return chapter;
     }
 }
