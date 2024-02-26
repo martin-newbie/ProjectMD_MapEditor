@@ -191,7 +191,7 @@ public class EditManager : MonoBehaviour
         }
         else
         {
-            chapter = new ChapterData();
+            chapter = new ChapterData(idx);
             File.WriteAllText(dataPath, JsonUtility.ToJson(chapter));
         }
 
