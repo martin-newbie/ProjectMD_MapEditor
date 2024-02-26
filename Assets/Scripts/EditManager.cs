@@ -164,12 +164,9 @@ public class EditManager : MonoBehaviour
 
         var chapterData = GetChapterData(chapter);
 
-        stageData.chapterIndex = chapter;
-        stageData.stageIndex = stageIdx;
-        stageData.stageLevel = stageLevel;
+        chapterData.stageDatas[stageIdx].waveDatas = stageData.waveDatas;
+        chapterData.stageDatas[stageIdx].stageLevel = stageLevel;
 
-        chapterData.chapterIndex = chapter;
-        chapterData.stageDatas[stageIdx] = stageData;
         string chapterJson = JsonUtility.ToJson(chapterData);
         string jsonData = JsonUtility.ToJson(stageData);
 
