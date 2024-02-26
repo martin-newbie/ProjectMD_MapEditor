@@ -46,10 +46,13 @@ public class ChapterData
     public ChapterData(int _chapterIndex)
     {
         chapterIndex = _chapterIndex;
-        stageDatas = new List<StageData>(new StageData[20]);
-        foreach (var item in stageDatas)
+        stageDatas = new List<StageData>();
+        for (int i = 0; i < 20; i++)
         {
-            item.chapterIndex = chapterIndex;
+            var stage = new StageData();
+            stage.chapterIndex = chapterIndex;
+            stage.stageIndex = i;
+            stageDatas.Add(stage);
         }
     }
 }
