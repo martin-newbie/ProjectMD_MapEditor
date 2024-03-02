@@ -26,7 +26,7 @@ public class DataBaseLoadButton : Editor
 public class RewardItem : ScriptableObject
 {
     public int chapter;
-    public RewardData[] datas;
+    public StageRewardData[] datas;
 
     public void ExportToScript()
     {

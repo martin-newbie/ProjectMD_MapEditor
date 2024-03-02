@@ -1,4 +1,11 @@
 
+
+[System.Serializable]
+public class StageRewardData
+{
+    public RewardData[] datas;
+}
+
 [System.Serializable]
 public class RewardData
 {
