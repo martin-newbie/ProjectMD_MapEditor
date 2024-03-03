@@ -12,3 +12,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ee9cf3028ce2442b4aef55c95d8801, type: 3}
   m_Name: 0
   m_EditorClassIdentifier: 
+  chapter: 0
+  datas:
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2

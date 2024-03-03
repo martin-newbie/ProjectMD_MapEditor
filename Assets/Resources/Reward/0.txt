@@ -2,144 +2,29 @@
     "chapter": 0,
     "datas": [
         {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
-        },
-        {
-            "acquire_range": 0.0,
-            "count_min": 0,
-            "count_max": 0,
-            "type": 0,
-            "idx": 0
+            "datas": [
+                {
+                    "acquire_range": 1.0,
+                    "count_min": 3,
+                    "count_max": 5,
+                    "type": 0,
+                    "idx": 2
+                },
+                {
+                    "acquire_range": 0.699999988079071,
+                    "count_min": 1,
+                    "count_max": 3,
+                    "type": 0,
+                    "idx": 2
+                },
+                {
+                    "acquire_range": 0.5,
+                    "count_min": 1,
+                    "count_max": 3,
+                    "type": 0,
+                    "idx": 2
+                }
+            ]
         }
     ]
 }
