@@ -32,6 +32,27 @@ MonoBehaviour:
       idx: 2
   - datas:
     - acquire_range: 1
+      count_min: 2
+      count_max: 4
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 3
+    - acquire_range: 1
+      count_min: 500
+      count_max: 1500
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
       count_min: 3
       count_max: 5
       type: 0
@@ -45,7 +66,33 @@ MonoBehaviour:
       count_min: 1
       count_max: 3
       type: 0
+      idx: 1
+    - acquire_range: 1
+      count_min: 500
+      count_max: 1500
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 0
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
       idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 1
+      count_min: 500
+      count_max: 1500
+      type: 1
+      idx: 999
   - datas:
     - acquire_range: 1
       count_min: 3
@@ -62,6 +109,16 @@ MonoBehaviour:
       count_max: 3
       type: 0
       idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
   - datas:
     - acquire_range: 1
       count_min: 3
@@ -78,6 +135,16 @@ MonoBehaviour:
       count_max: 3
       type: 0
       idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
   - datas:
     - acquire_range: 1
       count_min: 3
@@ -94,3 +161,351 @@ MonoBehaviour:
       count_max: 3
       type: 0
       idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
+  - datas:
+    - acquire_range: 1
+      count_min: 3
+      count_max: 5
+      type: 0
+      idx: 2
+    - acquire_range: 0.7
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.5
+      count_min: 1
+      count_max: 3
+      type: 0
+      idx: 2
+    - acquire_range: 0.2
+      count_min: 1
+      count_max: 1
+      type: 0
+      idx: 4
+    - acquire_range: 1
+      count_min: 750
+      count_max: 2000
+      type: 1
+      idx: 999
