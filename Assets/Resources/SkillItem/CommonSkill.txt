@@ -1,0 +1,43 @@
+{
+    "skillItemDatas": [
+        {
+            "items": []
+        },
+        {
+            "items": []
+        },
+        {
+            "items": []
+        },
+        {
+            "items": []
+        },
+        {
+            "items": []
+        },
+        {
+            "items": []
+        },
+        {
+            "items": []
+        },
+        {
+            "items": []
+        },
+        {
+            "items": []
+        },
+        {
+            "items": [
+                {
+                    "idx": 0,
+                    "count": 0
+                },
+                {
+                    "idx": 0,
+                    "count": 0
+                }
+            ]
+        }
+    ]
+}
