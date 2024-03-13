@@ -5,11 +5,10 @@ using UnityEngine.Networking;
 
 public static class UploadController
 {
-    public static bool useAsLocalhost = true;
     public static string portURL = "http://ksmin.iptime.org:8081/rest/";
     public static string testURL = "http://localhost:8083/rest/";
 
-    public static async void UploadData(string title, string data)
+    public static async void UploadData(string title, string data, bool useAsLocalhost = false)
     {
         var sendData = new SendData(title, data);
         var form = new WWWForm();

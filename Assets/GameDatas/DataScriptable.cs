@@ -20,7 +20,7 @@ public class DataScriptableButtons : Editor
         }
         if (GUILayout.Button("Upload"))
         {
-            UploadController.UploadData(item.title, item.ExportToJSON());
+            UploadController.UploadData(item.title, item.ExportToJSON(), item.uploadAsLocalhost);
         }
     }
 }
@@ -29,6 +29,7 @@ public class DataScriptableButtons : Editor
 
 public abstract class DataScriptable : ScriptableObject
 {
+    public bool uploadAsLocalhost = true;
     public string title;
 
     public virtual string ExportToJSON()
