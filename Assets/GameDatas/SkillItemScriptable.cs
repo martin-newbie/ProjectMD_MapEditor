@@ -33,7 +33,7 @@ public class SkillItemScriptable : ScriptableObject
 
     public void ExportToData()
     {
-        string resourcePath = $"SkillItem/{title}";
+        string resourcePath = $"Datas/{title}";
         string dataPath = Application.dataPath + "/Resources/" + resourcePath + ".txt";
         string jsonData = JsonUtility.ToJson(this);
         File.WriteAllText(dataPath, jsonData);
