@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7228cf5cfe9baab47b3d995d544f0340, type: 3}
   m_Name: commonSkillItem
   m_EditorClassIdentifier: 
+  title: CommonSkill
   skillItemDatas:
   - items:
     - idx: 0
