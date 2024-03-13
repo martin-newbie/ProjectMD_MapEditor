@@ -10,7 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7228cf5cfe9baab47b3d995d544f0340, type: 3}
-  m_Name: ExSkillItem
+  m_Name: exSkillItem
   m_EditorClassIdentifier: 
+  uploadAsLocalhost: 1
   title: ExSkillItem
-  skillItemDatas: []
+  skillItemDatas:
+  - coin: 80000
+    items:
+    - idx: 0
+      count: 12
+    - idx: 4
+      count: 10
+  - coin: 500000
+    items:
+    - idx: 0
+      count: 18
+    - idx: 1
+      count: 12
+    - idx: 5
+      count: 10
+    - idx: 8
+      count: 18
+  - coin: 3000000
+    items:
+    - idx: 2
+      count: 12
+    - idx: 1
+      count: 18
+    - idx: 6
+      count: 10
+    - idx: 9
+      count: 18
+  - coin: 10000000
+    items:
+    - idx: 3
+      count: 8
+    - idx: 2
+      count: 18
+    - idx: 7
+      count: 6
+    - idx: 10
+      count: 18
