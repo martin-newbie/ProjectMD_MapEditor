@@ -20,7 +20,7 @@ public class DataScriptableButtons : Editor
         }
         if (GUILayout.Button("Upload"))
         {
-            
+            UploadController.UploadData(item.title, item.ExportToJSON());
         }
     }
 }
@@ -31,12 +31,13 @@ public abstract class DataScriptable : ScriptableObject
 {
     public string title;
 
-    public virtual void ExportToJSON()
+    public virtual string ExportToJSON()
     {
         string resourcePath = $"Datas/{title}";
         string dataPath = Application.dataPath + "/Resources/" + resourcePath + ".txt";
         string jsonData = JsonUtility.ToJson(this);
         File.WriteAllText(dataPath, jsonData);
         GUIUtility.systemCopyBuffer = jsonData;
+        return jsonData;
     }
 }
