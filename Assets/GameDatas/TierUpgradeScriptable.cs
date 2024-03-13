@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "TierData", menuName = "GameDatas/TierData", order = int.MinValue)]
 public class TierUpgradeScriptable : DataScriptable
 {
-    public TierData[] datas;
+    public TierData[] upgrade_data;
 }
 
 [System.Serializable]
