@@ -15,19 +15,19 @@ MonoBehaviour:
   uploadAsLocalhost: 1
   title: CommonSkill
   skillItemDatas:
-  - coin: 0
+  - coin: 5000
     items:
     - idx: 0
       count: 1
-  - coin: 0
+  - coin: 8000
     items:
     - idx: 0
       count: 5
-  - coin: 0
+  - coin: 60000
     items:
     - idx: 0
       count: 8
-  - coin: 0
+  - coin: 100000
     items:
     - idx: 0
       count: 12
@@ -35,7 +35,7 @@ MonoBehaviour:
       count: 4
     - idx: 10
       count: 4
-  - coin: 0
+  - coin: 300000
     items:
     - idx: 1
       count: 8
@@ -43,7 +43,7 @@ MonoBehaviour:
       count: 3
     - idx: 14
       count: 12
-  - coin: 0
+  - coin: 450000
     items:
     - idx: 2
       count: 5
@@ -53,7 +53,7 @@ MonoBehaviour:
       count: 11
     - idx: 14
       count: 16
-  - coin: 0
+  - coin: 1500000
     items:
     - idx: 2
       count: 8
@@ -61,7 +61,7 @@ MonoBehaviour:
       count: 4
     - idx: 15
       count: 18
-  - coin: 0
+  - coin: 2400000
     items:
     - idx: 3
       count: 8
@@ -71,7 +71,7 @@ MonoBehaviour:
       count: 5
     - idx: 16
       count: 8
-  - coin: 0
+  - coin: 4000000
     items:
     - idx: 3
       count: 12
@@ -79,13 +79,3 @@ MonoBehaviour:
       count: 8
     - idx: 16
       count: 14
-  - coin: 0
-    items:
-    - idx: 3
-      count: 12
-    - idx: 2
-      count: 14
-    - idx: 13
-      count: 9
-    - idx: 16
-      count: 17
